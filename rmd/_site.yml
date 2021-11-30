@@ -48,11 +48,15 @@ navbar:
               href: cdm54.html
             - text: "Changes from CDM v5.3"
               href: cdm54Changes.html
-            - text: "Proposed NLP schema"
-              href: nlp.html
     - text: "Proposals"
       icon: fa-plus-square
       menu:
+        - text: "Proposed NLP schema"
+          menu:
+            - text: "NLP schema documentation"
+              href: nlp.html
+            - text: "Proposal (issue)"
+              href: https://github.com/OHDSI/CommonDataModel/issues/465
         - text: "Under Review"
           href: https://github.com/OHDSI/CommonDataModel/issues?q=is%3Aopen+is%3Aissue+label%3AProposal
         - text: "Accepted"

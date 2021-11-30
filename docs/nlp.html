@@ -14657,30 +14657,6 @@ No
 </tr>
 <tr>
 <td style="text-align:left;font-weight: bold;">
-shard_id
-</td>
-<td style="text-align:left;width: 3in; ">
-shard_id
-</td>
-<td style="text-align:left;width: 4in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-smallint
-</td>
-<td style="text-align:left;width: 1in; ">
-No
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
 created_at
 </td>
 <td style="text-align:left;width: 3in; ">
@@ -14709,7 +14685,7 @@ No
 <div id="note_span" class="section level3 tabset tabset-pills">
 <h3>NOTE_SPAN</h3>
 <p><strong>Table Description</strong></p>
-<p>The NLP_SPAN table is a reference table, which includes a list of the text span detected by the NLP system.</p>
+<p>The NOTE_SPAN table is a reference table, which includes a list of the text span detected by the NLP system.</p>
 <table class="table table-condensed table-hover" style="font-size: 13px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -14745,10 +14721,10 @@ FK Domain
 <tbody>
 <tr>
 <td style="text-align:left;font-weight: bold;">
-note_entity_id
+note_span_id
 </td>
 <td style="text-align:left;width: 3in; ">
-note_entity_id
+note_span_id
 </td>
 <td style="text-align:left;width: 4in; ">
 </td>
@@ -14887,37 +14863,13 @@ No
 <td style="text-align:left;width: 1in; ">
 </td>
 </tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-shard_id
-</td>
-<td style="text-align:left;width: 3in; ">
-shard_id
-</td>
-<td style="text-align:left;width: 4in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-integer
-</td>
-<td style="text-align:left;width: 1in; ">
-Yes
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-</tr>
 </tbody>
 </table>
 </div>
 <div id="nlp_concept" class="section level3 tabset tabset-pills">
 <h3>NLP_CONCEPT</h3>
 <p><strong>Table Description</strong></p>
-<p>The NLP_CONCEPT table is a table which contains the different concept identifiers assigned by the NLP system to the extracted NLP_SPAN.</p>
+<p>The NLP_CONCEPT table is a table which contains the different concept identifiers assigned by the NLP system to the extracted NOTE_SPAN.</p>
 <table class="table table-condensed table-hover" style="font-size: 13px; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -14953,10 +14905,10 @@ FK Domain
 <tbody>
 <tr>
 <td style="text-align:left;font-weight: bold;">
-note_entity_id
+note_span_id
 </td>
 <td style="text-align:left;width: 3in; ">
-note_entity_id
+note_span_id
 </td>
 <td style="text-align:left;width: 4in; ">
 </td>
@@ -14981,30 +14933,6 @@ concept_id
 </td>
 <td style="text-align:left;width: 3in; ">
 concept_id
-</td>
-<td style="text-align:left;width: 4in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-integer
-</td>
-<td style="text-align:left;width: 1in; ">
-Yes
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-shard_id
-</td>
-<td style="text-align:left;width: 3in; ">
-shard_id
 </td>
 <td style="text-align:left;width: 4in; ">
 </td>
@@ -15089,10 +15017,10 @@ Yes
 </tr>
 <tr>
 <td style="text-align:left;font-weight: bold;">
-note_entity_id
+note_span_id
 </td>
 <td style="text-align:left;width: 3in; ">
-note_entity_id
+note_span_id
 </td>
 <td style="text-align:left;width: 4in; ">
 </td>
@@ -15149,30 +15077,6 @@ integer
 </td>
 <td style="text-align:left;width: 1in; ">
 No
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-shard_id
-</td>
-<td style="text-align:left;width: 3in; ">
-shard_id
-</td>
-<td style="text-align:left;width: 4in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-integer
-</td>
-<td style="text-align:left;width: 1in; ">
-Yes
 </td>
 <td style="text-align:left;width: 1in; ">
 </td>
@@ -15249,10 +15153,10 @@ Yes
 </tr>
 <tr>
 <td style="text-align:left;font-weight: bold;">
-note_entity_id
+note_span_id
 </td>
 <td style="text-align:left;width: 3in; ">
-note_entity_id
+note_span_id
 </td>
 <td style="text-align:left;width: 4in; ">
 </td>
@@ -15357,30 +15261,6 @@ integer
 </td>
 <td style="text-align:left;width: 1in; ">
 No
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-shard_id
-</td>
-<td style="text-align:left;width: 3in; ">
-shard_id
-</td>
-<td style="text-align:left;width: 4in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-integer
-</td>
-<td style="text-align:left;width: 1in; ">
-Yes
 </td>
 <td style="text-align:left;width: 1in; ">
 </td>
@@ -15457,10 +15337,10 @@ No
 </tr>
 <tr>
 <td style="text-align:left;font-weight: bold;">
-source_note_entity_id
+source_note_span_id
 </td>
 <td style="text-align:left;width: 3in; ">
-source_note_entity_id
+source_note_span_id
 </td>
 <td style="text-align:left;width: 4in; ">
 </td>
@@ -15481,10 +15361,10 @@ Yes
 </tr>
 <tr>
 <td style="text-align:left;font-weight: bold;">
-target_note_entity_id
+target_note_span_id
 </td>
 <td style="text-align:left;width: 3in; ">
-target_note_entity_id
+target_note_span_id
 </td>
 <td style="text-align:left;width: 4in; ">
 </td>
@@ -15505,10 +15385,10 @@ Yes
 </tr>
 <tr>
 <td style="text-align:left;font-weight: bold;">
-label_id
+relationship_concept_id
 </td>
 <td style="text-align:left;width: 3in; ">
-label_id
+relationship_concept_id
 </td>
 <td style="text-align:left;width: 4in; ">
 </td>
@@ -15541,30 +15421,6 @@ real
 </td>
 <td style="text-align:left;width: 1in; ">
 No
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-shard_id
-</td>
-<td style="text-align:left;width: 3in; ">
-shard_id
-</td>
-<td style="text-align:left;width: 4in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-integer
-</td>
-<td style="text-align:left;width: 1in; ">
-Yes
 </td>
 <td style="text-align:left;width: 1in; ">
 </td>
@@ -15617,10 +15473,10 @@ FK Domain
 <tbody>
 <tr>
 <td style="text-align:left;font-weight: bold;">
-note_entity_id
+note_span_id
 </td>
 <td style="text-align:left;width: 3in; ">
-note_entity_id
+note_span_id
 </td>
 <td style="text-align:left;width: 4in; ">
 </td>
@@ -15650,30 +15506,6 @@ nlp_execution_id
 </td>
 <td style="text-align:left;width: 1in; ">
 bigint
-</td>
-<td style="text-align:left;width: 1in; ">
-Yes
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-weight: bold;">
-shard_id
-</td>
-<td style="text-align:left;width: 3in; ">
-shard_id
-</td>
-<td style="text-align:left;width: 4in; ">
-</td>
-<td style="text-align:left;width: 1in; ">
-integer
 </td>
 <td style="text-align:left;width: 1in; ">
 Yes

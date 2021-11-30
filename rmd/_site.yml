@@ -48,6 +48,8 @@ navbar:
               href: cdm54.html
             - text: "Changes from CDM v5.3"
               href: cdm54Changes.html
+            - text: "Proposed NLP schema"
+              href: nlp.html
     - text: "Proposals"
       icon: fa-plus-square
       menu:
